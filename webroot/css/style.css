@@ -1,0 +1,598 @@
+/* Inicio mis estilos */
+.navbar-inverse { 
+    background-color:rgb(220, 220, 220); 
+    border-color:rgb(220, 220, 220);
+    text-align: center;
+}
+a {
+    color: #424242;
+    text-decoration: none;
+}
+a:hover { color:#E78200; }
+/* Fin mis estilos */
+body {
+    background-color: rgb(220, 220, 220);
+}
+.event-list {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.event-list > li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(51, 51, 51);
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+    padding: 0px;
+    margin: 0px 0px 20px;
+}
+.event-list > li > time {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #e78200;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.event-list > li:nth-child(even) > time {
+    background-color: rgb(165, 82, 167);
+}
+.event-list > li > time > span {
+    display: none;
+}
+.event-list > li > time > .day {
+    display: block;
+    font-size: 30pt;
+    line-height: 1;
+}
+.event-list > li > time > .day-two {
+    display: block;
+    font-size: 9pt;
+    line-height: 1;
+}
+.event-list > li time > .month {
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
+}
+.event-list > li > img {
+    width: 100%;
+}
+.event-list > li > .info {
+    padding-top: 5px;
+    text-align: center;
+}
+.event-list > li > .info > .title {
+    font-size: 16pt;
+    font-weight: 700;
+    margin: 0px;
+}
+.event-list > li > .info > .desc {
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0px;
+}
+.event-list > li > .info > ul,
+.event-list > li > .social > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.event-list > li > .social > ul {
+    margin: 0px;
+}
+.event-list > li > .info > ul > li,
+.event-list > li > .social > ul > li {
+    display: table-cell;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0px;
+}
+.event-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+} 
+.event-list > li > .social > ul > li {    
+    padding: 0px;
+}
+.event-list > li > .social > ul > li > a {
+    padding: 3px 0px;
+} 
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .social > ul > li:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
+}
+.facebook a,
+.twitter a,
+.google-plus a {
+    display: block;
+    width: 100%;
+    color: rgb(75, 110, 168) !important;
+}
+.twitter a {
+    color: rgb(79, 213, 248) !important;
+}
+.google-plus a {
+    color: rgb(221, 75, 57) !important;
+}
+.facebook:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(75, 110, 168) !important;
+}
+.twitter:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(79, 213, 248) !important;
+}
+.google-plus:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(221, 75, 57) !important;
+}
+
+
+@media (min-width: 768px) {
+    .event-list > li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 0px;
+    }
+    .event-list > li > time,
+    .event-list > li > img  {
+        display: inline-block;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        float: left;
+    }
+    .event-list > li > .info {
+        background-color: rgb(245, 245, 245);
+        overflow: hidden;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .event-list > li > .info {
+        position: relative;
+        height: 120px;
+        text-align: left;
+        padding-right: 40px;
+    }	
+    .event-list > li > .info > .title, 
+    .event-list > li > .info > .desc {
+        padding: 0px 10px;
+    }
+    .event-list > li > .info > ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .event-list > li > .social {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        width: 40px;
+    }
+    .event-list > li > .social > ul {
+        border-left: 1px solid rgb(230, 230, 230);
+    }
+    .event-list > li > .social > ul > li {			
+        display: block;
+        padding: 0px;
+    }
+    .event-list > li > .social > ul > li > a {
+        display: block;
+        width: 40px;
+        padding: 10px 0px 9px;
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+#menu
+{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+ul.navbar-nav { 
+  float:right;
+  text-align:center;
+}
+ul.navbar-nav li 
+{
+  padding: 0 10px;
+}
+@media only screen and (max-width:767px)
+{ ul.navbar-nav { float:none; } }
+.container-fluid {
+  padding: 0 1em;
+}
+.navbar-nav li a
+{
+  color:black!important;
+  font-size:1.2em;
+  font-family: Century gothic,sans-serif;
+  font-weight:600;
+  transition: 0.4s ease;
+}
+.navbar-nav li a:hover
+{
+  color:#fff!important;
+  background-color:black!important;
+}
+.navbar-brand {
+  padding:10px 15px!important;
+}
+a.navbar-brand .fa-globe
+{
+  font-size: 30px;
+  color: black;
+  transition:0.5s ease;
+}
+a.navbar-brand .fa-globe:hover
+{
+  color: #3935e6;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black!important;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fff!important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+.splash {
+  background:url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-215779.jpg") no-repeat fixed center;
+	background-size: cover;
+	color: #fff;
+}
+
+.splash .container {
+  padding-top: 15vh; /* No JS fallback*/
+  padding-bottom: 10vh; /* No JS fallback*/
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  max-height:250px;
+  max-width: 250px;
+  margin: 0 auto 1em;
+  width: 100%;
+  opacity: 0.85;
+}
+
+.splash h1 {
+  font-size: 40px;
+  margin-bottom: .15em;
+  text-align: center;
+}
+
+.splash .lead, .splash .continue {
+  display: inline-block;
+  text-align: center;
+}
+h1.intro-text
+{
+  margin:0;
+  font-size: 14px;
+  font-weight: bold;
+  color:#E78200;
+  text-shadow: #fff 0.1em 0.1em 0.2em
+}
+.splash .lead {
+  font-size: 30px;
+  margin-bottom: 1em;
+  font-family: Rockwell;
+}
+@keyframes blink
+  {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+  }
+        @-webkit-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink
+        {
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+/* code for animated blinking cursor */
+#typed-cursor
+{
+      opacity: 1;
+      font-size: 40px;
+      color: #fff;
+      font-weight: 50;
+      -webkit-animation: blink 1s infinite;
+      -moz-animation: blink 1s infinite;
+      -ms-animation: blink 1s infinite;
+      -o-animation: blink 1s infinite;
+      animation: blink 1s infinite;
+}
+
+.splash .continue {
+  font-size: 3em;
+  display:block;
+}
+
+.splash .continue a {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height:40px;
+  font-size:30px;
+}
+.splash .continue a:hover {
+  background-color: rgba(255, 255, 255, .25);
+}
+#about,#portfolio,#contact
+{
+  padding-top:4em!important;
+}
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+section.success {
+    color: #fff;
+    background: rgb(13, 79, 136);
+  padding: 2%;
+}
+
+section.success a
+{
+  color:black;
+  transition: 0.4s ease;
+}
+section.success a:hover {
+    outline: 0;
+    color: #fff;
+  border: 2px solid #fff;
+}
+.contact-button
+{
+  padding-bottom:2%;
+}
+hr.star-light,hr.star-portfolio {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px;
+    text-align: center;
+}
+
+hr.star-light:after,hr.star-portfolio:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+hr.star-portfolio {
+    border-color: black;
+}
+hr.star-portfolio:after {
+    color: black;
+    background-color: #eee;
+}
+hr.star-light:after {
+    color: #fff;
+    background-color: rgb(13, 79, 136);
+}
+p.content-text { font-size: 25px; }
+
+/* PORTFOLIO */
+.portfolio-card{
+    box-shadow: 0px 2px 5px #888888;
+    background: #eee;
+    border-radius: 4px;
+
+}
+
+.portfolio-card:hover{
+	box-shadow: 0px 10px 10px #888888;
+  cursor: pointer
+}
+
+.portfolio-container-holder{
+	background: #eee;
+	padding-bottom: 20px;
+}
+
+
+.portfolio-card-holder{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.portfolio-img{
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+.portfolio-img-desc{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	padding: 5px;
+}
+
+/* Contact */
+.contact-me-container{
+	padding:3%;
+background: rgb(13, 79, 136);
+}
+.fa-user,.fa-at,.fa-phone
+{
+  color:black;
+}
+.submit-button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* ========================
+Footer
+======================== */
+
+footer {
+  background-color: #E78200;
+  color:  #fff;
+  font-size: 1.5em;
+  text-align: center;
+  padding:3%;
+}
+h4.author
+{
+  letter-spacing:4px;
+}
+hr.footer-hr
+{
+  width:150px;
+}
+hr.copyright
+{
+  opacity:0.4;
+}
+/* ========================
+Fin Footer
+======================== */
+
+.contacto {
+    cursor: pointer;
+}
+.aboutit {
+    cursor: pointer;
+}
+.aboutit-p {
+    cursor: pointer;
+    font-size: 0.7em;
+    text-align: left;
+}
+#capa-enlaces a:hover{
+    color: white;
+    text-decoration: none;
+}
+.enlaces {
+    cursor: pointer;
+}
+
+
+
+/* ========================
+Inicio Tooltip
+======================== */
+#tooltip {
+    font-family: Ubuntu, sans-serif;
+    font-size: 0.875em;
+    text-align: center;
+    text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+    line-height: 1.5;
+    color: #fff;
+    background: #333;
+    background: -webkit-gradient( linear, left top, left bottom, from( rgba( 0, 0, 0, .6 ) ), to( rgba( 0, 0, 0, .8 ) ) );
+    background: -webkit-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+    background: -moz-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+    background: -ms-radial-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+    background: -o-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+    background: linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-top: 1px solid #fff;
+    -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+    -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+    box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+#tooltip:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+    border-top-color: rgba( 0, 0, 0, .7 );
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+#tooltip.top:after {
+    border-top-color: transparent;
+    border-bottom: 10px solid #333;
+    border-bottom-color: rgba( 0, 0, 0, .6 );
+    top: -20px;
+    bottom: auto;
+}
+#tooltip.left:after {
+    left: 10px;
+    margin: 0;
+}
+#tooltip.right:after {
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+/* ========================
+Fin Tooltip
+======================== */
+

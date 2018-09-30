@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: www.lasnoticiasmascomentadas.es/periodicos
+Disallow: www.lasnoticiasmascomentadas.es/login
+Disallow: www.lasnoticiasmascomentadas.mx/periodicos
+Disallow: www.lasnoticiasmascomentadas.mx/login
